@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.page-center {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.link {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
