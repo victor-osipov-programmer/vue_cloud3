@@ -38,3 +38,6 @@
 input:user-invalid {
     outline-color: red;
 }
+.page {
+    display: flex;
+}

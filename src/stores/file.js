@@ -7,11 +7,11 @@ export const shared_files = ref([])
 export async function getFiles() {
     const response = await query('/files/disk')
     const json = await response.json()
-    files.value = json.data
+    files.value = json.data ?? []
 }
 
 export async function getSharedFiles() {
     const response = await query('/shared')
     const json = await response.json()
-    shared_files.value = json
+    shared_files.value = json ?? []
 }

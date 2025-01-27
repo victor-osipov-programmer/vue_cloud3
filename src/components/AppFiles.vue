@@ -6,9 +6,12 @@
         <AppFile v-for="file in files" :file="file">
             <template #actions>
                 <div class="form app-files__form">
-                    <AppButton @click="deleteFile(file)">Удалить</AppButton>
-                    <AppButton @click="$router.push({name: 'edit', query: {file_id: file.file_id, file_name: file.name}})">Редактировать</AppButton>
-                    <AppButton>Права</AppButton>
+                    <template v-if="type != 'shared_files'">
+                        <AppButton @click="deleteFile(file)">Удалить</AppButton>
+                        <AppButton @click="$router.push({name: 'edit', query: {file_id: file.file_id, file_name: file.name}})">Редактировать</AppButton>
+                        <AppButton @click="$router.push({name: 'rights', query: {file_id: file.file_id}})">Права</AppButton>
+                    </template>
+                    
                     <AppButton @click="downloadFile(file)">Скачать</AppButton>
                 </div>
             </template>
@@ -24,7 +27,7 @@ import { query } from '@/api/query';
 import { downloadBlob } from '@/utils';
 
 
-defineProps(['files'])
+defineProps(['files', 'type'])
 
 function downloadFile(file) {
     query('/files/' + file.file_id)

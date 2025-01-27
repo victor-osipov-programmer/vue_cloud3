@@ -1,10 +1,6 @@
 <template>
-    <div class="upload-page ">
-        <AppPanel>
-            <template #actions>
-                <AppButton @click="$router.back()">Назад</AppButton>
-            </template>
-        </AppPanel>
+    <div class="upload-page page">
+        <AppPanel></AppPanel>
 
         <div class="page-center">
 
@@ -46,9 +42,6 @@ function upload(event) {
 </script>
 
 <style scoped>
-.upload-page {
-    display: flex;
-}
 .upload-files {
     width: 400px;
     background-color: var(--color-primary);

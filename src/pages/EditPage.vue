@@ -1,10 +1,6 @@
 <template>
-    <div class="edit-page">
-        <AppPanel>
-            <template #actions>
-                <AppButton @click="$router.back()">Назад</AppButton>
-            </template>
-        </AppPanel>
+    <div class="edit-page page">
+        <AppPanel></AppPanel>
         <div class="page-center">
             <form @submit.prevent class="edit-page__form">
                 <AppInput class="edit-page__input" v-model="file_name" required placeholder="Имя файла"></AppInput>
@@ -42,9 +38,6 @@ function save() {
 </script>
 
 <style scoped>
-.edit-page {
-    display: flex;
-}
 .edit-page__form {
     display: flex;
     flex-direction: column;

@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '@/pages/HomePage.vue'
 import RegisterPage from '@/pages/RegisterPage.vue'
 import LoginPage from '@/pages/LoginPage.vue'
 import FilesPage from '@/pages/FilesPage.vue'
 import UploadPage from '@/pages/UploadPage.vue'
 import EditPage from '@/pages/EditPage.vue'
 import SharedPage from '@/pages/SharedPage.vue'
+import RightsPage from '@/pages/RightsPage.vue'
 
 const routes = [
   {
@@ -42,6 +42,11 @@ const routes = [
     path: '/shared',
     name: 'shared',
     component: SharedPage
+  },
+  {
+    path: '/rights',
+    name: 'rights',
+    component: RightsPage
   },
 ]
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="files-page">
+    <div class="files-page page">
         <AppPanel></AppPanel>
         <AppFiles :files="files"></AppFiles>
     </div>
@@ -14,7 +14,4 @@ getFiles()
 </script>
 
 <style scoped>
-.files-page {
-    display: flex;
-}
 </style>
