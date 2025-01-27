@@ -15,7 +15,7 @@ defineProps(['file'])
 
 <style scoped>
 .app-file {
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-primary);
     padding: 1rem;
     border-radius: 5px;
 }
@@ -23,7 +23,7 @@ defineProps(['file'])
     margin-bottom: 0.2rem;
 }
 .app-file__id {
-    color: var(--color-bg-secondary);
+    color: var(--color-secondary);
 }
 
 </style>

@@ -6,8 +6,8 @@
     font-family: Roboto;
 }
 :root {
-    --color-bg-primary: rgb(197, 233, 253);
-    --color-bg-secondary: rgb(102, 113, 148);
+    --color-primary: rgb(197, 233, 253);
+    --color-secondary: rgb(102, 113, 148);
     --color-accent: rgb(205, 205, 231);
 }
 .container {

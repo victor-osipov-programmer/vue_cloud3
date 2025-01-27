@@ -15,7 +15,7 @@
     cursor: pointer;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    background-color: var(--color-bg-secondary);
+    background-color: var(--color-secondary);
     color: white;
 }
 </style>

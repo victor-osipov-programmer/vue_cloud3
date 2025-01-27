@@ -1,6 +1,8 @@
 <template>
     <div class="app-panel">
         <div class="app-panel__content">
+            <router-link class="link" :to="{name: 'files'}">Файлы</router-link>
+            <router-link class="link" :to="{name: 'shared'}">Общие файлы</router-link>
             <router-link class="link" :to="{name: 'upload'}">Загрузка файлов</router-link>
 
             <slot name="actions">
@@ -20,7 +22,7 @@
 <style scoped>
 .app-panel {
     min-height: 100dvh;
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-primary);
     flex-shrink: 0;
 }
 .app-panel__content {

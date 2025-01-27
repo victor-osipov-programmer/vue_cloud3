@@ -1,5 +1,8 @@
 <template>
     <div class="app-files">
+        <div v-if="files.length === 0" class="shared-page__empty-text">
+            Пусто
+        </div>
         <AppFile v-for="file in files" :file="file">
             <template #actions>
                 <div class="form app-files__form">
@@ -14,11 +17,14 @@
 </template>
 
 <script setup>
-import { files, getFiles } from '@/stores/file';
+import { getFiles } from '@/stores/file';
 import AppFile from './AppFile.vue';
 import AppButton from './AppButton.vue';
 import { query } from '@/api/query';
 import { downloadBlob } from '@/utils';
+
+
+defineProps(['files'])
 
 function downloadFile(file) {
     query('/files/' + file.file_id)
@@ -49,5 +55,8 @@ function deleteFile(file) {
 .app-files__form {
     gap: 0.5rem;
     margin-top: 1rem;
+}
+.shared-page__empty-text {
+    color: var(--color-secondary);
 }
 </style>

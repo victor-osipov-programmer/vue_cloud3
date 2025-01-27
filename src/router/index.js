@@ -5,6 +5,7 @@ import LoginPage from '@/pages/LoginPage.vue'
 import FilesPage from '@/pages/FilesPage.vue'
 import UploadPage from '@/pages/UploadPage.vue'
 import EditPage from '@/pages/EditPage.vue'
+import SharedPage from '@/pages/SharedPage.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/edit',
     name: 'edit',
     component: EditPage
+  },
+  {
+    path: '/shared',
+    name: 'shared',
+    component: SharedPage
   },
 ]
 

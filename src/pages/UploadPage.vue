@@ -51,7 +51,7 @@ function upload(event) {
 }
 .upload-files {
     width: 400px;
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-primary);
     border-radius: 5px;
     position: relative;
     padding: 2rem 1rem;
@@ -59,7 +59,7 @@ function upload(event) {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    color: var(--color-bg-secondary);
+    color: var(--color-secondary);
 }
 .input-file {
     position: absolute;
@@ -81,6 +81,6 @@ function upload(event) {
     height: 100px;
     width: 100%;
     background-color: currentColor;
-    color: var(--color-bg-secondary);
+    color: var(--color-secondary);
 }
 </style>
