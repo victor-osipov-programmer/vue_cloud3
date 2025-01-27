@@ -7,7 +7,6 @@ export function getFiles() {
     query('/files/disk')
     .then(response => response.json())
     .then(json => {
-        console.log(json);
-        
+        files.value = json.data
     })
 }

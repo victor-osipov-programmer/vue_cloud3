@@ -16,6 +16,5 @@ getFiles()
 <style scoped>
 .files-page {
     display: flex;
-    
 }
 </style>

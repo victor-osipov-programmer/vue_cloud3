@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: inherit;
+    font-family: Roboto;
+}
+:root {
+    --color-bg-primary: rgb(197, 233, 253);
+    --color-bg-secondary: rgb(85, 92, 114);
+    --color-accent: rgb(205, 205, 231);
 }
 .container {
     max-width: 1000px;
@@ -17,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 .form-wrap {
     display: flex;
@@ -26,5 +34,4 @@
 .link {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: black;
 }
