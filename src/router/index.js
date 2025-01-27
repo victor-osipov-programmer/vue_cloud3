@@ -4,6 +4,7 @@ import RegisterPage from '@/pages/RegisterPage.vue'
 import LoginPage from '@/pages/LoginPage.vue'
 import FilesPage from '@/pages/FilesPage.vue'
 import UploadPage from '@/pages/UploadPage.vue'
+import EditPage from '@/pages/EditPage.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/upload',
     name: 'upload',
     component: UploadPage
+  },
+  {
+    path: '/edit',
+    name: 'edit',
+    component: EditPage
   },
 ]
 

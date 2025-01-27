@@ -7,7 +7,7 @@
 }
 :root {
     --color-bg-primary: rgb(197, 233, 253);
-    --color-bg-secondary: rgb(85, 92, 114);
+    --color-bg-secondary: rgb(102, 113, 148);
     --color-accent: rgb(205, 205, 231);
 }
 .container {
@@ -34,4 +34,7 @@
 .link {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+}
+input:user-invalid {
+    outline-color: red;
 }

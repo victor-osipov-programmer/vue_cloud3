@@ -4,7 +4,7 @@
             <template #actions>
                 <div class="form app-files__form">
                     <AppButton @click="deleteFile(file)">Удалить</AppButton>
-                    <AppButton>Редактировать</AppButton>
+                    <AppButton @click="$router.push({name: 'edit', query: {file_id: file.file_id, file_name: file.name}})">Редактировать</AppButton>
                     <AppButton>Права</AppButton>
                     <AppButton @click="downloadFile(file)">Скачать</AppButton>
                 </div>
@@ -49,8 +49,5 @@ function deleteFile(file) {
 .app-files__form {
     gap: 0.5rem;
     margin-top: 1rem;
-}
-.app-button {
-    /* background-color: white; */
 }
 </style>
