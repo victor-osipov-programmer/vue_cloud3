@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { query } from '@/api/query';
+import { query, handler } from '@/api/query';
 import AppButton from '@/components/AppButton.vue';
 import AppInput from '@/components/AppInput.vue';
 import { ref } from 'vue';

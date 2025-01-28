@@ -15,6 +15,8 @@
                 </div>
             </div>
 
+            <AppButton @click="$router.push({name: 'files'})">Назад</AppButton>
+
             <div class="upload-page__files">
                 <div class="upload-file" v-for="file in upload_files">
                     <div class="upload-file__name">

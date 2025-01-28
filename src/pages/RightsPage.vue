@@ -8,8 +8,9 @@
             <div class="rights-page__users">
                 <div class="rights-page__header">
                     <form @submit.prevent="addRights" class="rights-page__form">
-                        <AppInput required type="email" placeholder="Email" v-model="email"></AppInput>
+                        <AppInput class="rights-page__input" required type="email" placeholder="Email" v-model="email"></AppInput>
                         <AppButton>Добавить</AppButton>
+                        <AppButton @click="$router.push({name: 'files'})">Назад</AppButton>
                     </form>
                 </div>
                 
@@ -78,7 +79,7 @@ getFiles()
 .rights-page__form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 .app-input {
     width: 300px;
@@ -91,5 +92,8 @@ getFiles()
     grid-column: 1/-1;
     grid-template-columns: subgrid;
     margin-bottom: 1rem;
+}
+.rights-page__input {
+    margin-bottom: 0.5rem;
 }
 </style>
