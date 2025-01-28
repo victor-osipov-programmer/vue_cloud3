@@ -25,17 +25,12 @@ import AppFile from './AppFile.vue';
 import AppButton from './AppButton.vue';
 import { query } from '@/api/query';
 import { downloadBlob } from '@/utils';
+import { downloadFile } from '@/stores/file.js'
 
 
 defineProps(['files', 'type'])
 
-function downloadFile(file) {
-    query('/files/' + file.file_id)
-    .then(response => response.blob())
-    .then(blob => {
-        downloadBlob(blob, file.name)
-    })
-}
+
 
 function deleteFile(file) {
     query('/files/' + file.file_id, { method: 'DELETE' })

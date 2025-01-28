@@ -11,3 +11,12 @@ export function query(url, options = {}) {
         
     return fetch(new URL(url, base_url), options)
 }
+
+
+export function handler(response, type = 'json') {
+    if (response.ok) {
+        return response[type]()
+    } else {
+        throw response;
+    }
+}

@@ -29,7 +29,7 @@ const form = ref({
 
 async function login() {
     query('/authorization', {method: 'POST', body: form.value})
-    .then(response => response.json())
+    .then(handler)
     .then(json => {
         localStorage.setItem('token', json.token)
         router.push({name: 'files'})
